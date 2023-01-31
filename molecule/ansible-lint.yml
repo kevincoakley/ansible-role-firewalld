@@ -1,0 +1,7 @@
+---
+warn_list:
+  - internal-error
+  - fqcn
+  - args
+skip_list:
+  - yaml
