@@ -1,9 +1,9 @@
 ansible-role-firewalld
 ======================
 
-[![Build Status](https://travis-ci.org/kevincoakley/ansible-role-firewalld.svg?branch=master)](https://travis-ci.org/kevincoakley/ansible-role-firewalld)
+![](https://github.com/kevincoakley/ansible-role-firewalld/workflows/Molecule%20Test/badge.svg)
 
-Manage firewalld for CentOS 7
+Manage firewalld for CentOS 7, Rocky Linux 8, Rocky Linux 9, Ubuntu 20.04, and Ubuntu 22.04.
 
 Requirements
 ------------

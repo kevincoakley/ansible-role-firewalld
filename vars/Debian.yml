@@ -1,0 +1,6 @@
+---
+firewalld_packages:
+  "20":
+    - firewalld
+  "22":
+    - firewalld
