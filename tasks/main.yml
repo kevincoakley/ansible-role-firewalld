@@ -1,11 +1,15 @@
 ---
+- name: Include OS family specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Include OS specific tasks
+  include_tasks: "{{ ansible_os_family }}.yml"
+
 - name: Install firewalld and requirements
   package:
     name: "{{ item }}"
     state: present
-  with_items:
-    - firewalld
-    - python-firewall
+  with_items: "{{ firewalld_packages[ansible_distribution_major_version] }}"
 
 # https://docs.ansible.com/ansible/latest/modules/firewalld_module.html
 - name: Configure firewalld rules
