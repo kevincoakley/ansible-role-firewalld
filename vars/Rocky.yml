@@ -1,0 +1,9 @@
+---
+firewalld_packages:
+  "7":
+    - firewalld
+    - python-firewall
+  "8":
+    - firewalld
+  "9":
+    - firewalld
